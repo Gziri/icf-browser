@@ -11,21 +11,8 @@ import Description from "./description/description.component";
 
 const { DirectoryTree } = Tree;
 const TreeView = () => {
-  // const mapICFData = (data) => {
-  //   return data.map((branch) => {
-  //     if (!branch.subCat) {
-  //       return <Tree.File name={branch.catName} key={branch.id} />;
-  //     } else {
-  //       let subBranches = mapICFData(branch.subCat);
-  //       return (
-  //         <Tree.Folder name={branch.catName} key={branch.id}>
-  //           {subBranches}
-  //         </Tree.Folder>
-  //       );
-  //     }
-  //   });
-  // };
-
+  
+  console.log('loading treeview')
   let [info, setInfo] = useState("");
 
   const selectedNode = (key, info) => {

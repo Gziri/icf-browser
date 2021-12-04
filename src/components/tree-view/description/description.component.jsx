@@ -5,9 +5,9 @@ import "./description.styles.scss";
 import { Button } from "antd";
 
 import { connect } from "react-redux";
-import { addIcfCode } from "../../../redux/main/main.actions";
+import { addIcfCode } from "../../../redux/icf/icf.actions";
 
-const Description = (props, addCode) => {
+const Description = ({addCode,...props}) => {
   console.log("Description: ", props);
   var body = null;
   var inclusion = null;

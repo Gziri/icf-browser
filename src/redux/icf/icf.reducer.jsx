@@ -1,11 +1,12 @@
-import { MAIN_TYPES } from "./main.types";
-import { addCodeToStore } from "./main.utils";
+import { MAIN_TYPES } from "./icf.types";
+import { addCodeToStore } from "./icf.utils";
 
 const INITIAL_STATE = {
-  icfBundle: null,
+  text: "",
+  icfBundle: [],
 };
 
-const mainReducer = (state = INITIAL_STATE, action) => {
+const icfReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case MAIN_TYPES.ADD_ICF_VALUE:
       return {
@@ -17,4 +18,4 @@ const mainReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export default mainReducer;
+export default icfReducer;

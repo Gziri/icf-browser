@@ -37,7 +37,7 @@ function App() {
   // treeStructure();
   return (
     <div className="App">
-      {/* <Navigation /> */}
+      <Navigation />
       <TreeView />
     </div>
   );
