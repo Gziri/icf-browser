@@ -16,7 +16,7 @@ export const addCodeToStore = (state, icfCodeToAdd) => {
   return [...state];
 };
 
-export const removeCodeToStore = (state, icfCodeToRemove) => {
+export const removeCodeFromStore = (state, icfCodeToRemove) => {
   
   const newState = state.filter(
     (code) => code.initial !== icfCodeToRemove.initial

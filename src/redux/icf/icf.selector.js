@@ -1,8 +1,5 @@
 import { createSelector } from "reselect";
 
-const selectBundle = (state) => state.icf.icfBundle;
+const selectIcf = (state) => state.icf;
 
-export const selectIcfBundle = createSelector(
-  [selectBundle],
-  (icf) => [...icf]
-);
+export const selectIcfBundle = createSelector([selectIcf], (icf) => icf.Bundle);

@@ -11,8 +11,7 @@ import Description from "./description/description.component";
 
 const { DirectoryTree } = Tree;
 const TreeView = () => {
-  
-  console.log('loading treeview')
+
   let [info, setInfo] = useState("");
 
   const selectedNode = (key, info) => {

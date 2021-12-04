@@ -8,7 +8,7 @@ import { connect } from "react-redux";
 import { addIcfCode } from "../../../redux/icf/icf.actions";
 
 const Description = ({addCode,...props}) => {
-  console.log("Description: ", props);
+  
   var body = null;
   var inclusion = null;
   var exclusion = null;
@@ -18,7 +18,6 @@ const Description = ({addCode,...props}) => {
     var [bod, inc, exc] = props.node.description.split("\n ");
     if (bod) {
       body = <span>{parse(bod)}</span>;
-      console.log(body);
     }
     if (inc) {
       inclusion = (
@@ -40,7 +39,8 @@ const Description = ({addCode,...props}) => {
 
   if (props.node.initial) {
     description = (
-      <div>
+      <div className="description-container ">
+      
         <div className="title">{props.node.title}</div>
         <div className="body">{body}</div>
         <div className="inclusions">{inclusion}</div>
@@ -50,6 +50,7 @@ const Description = ({addCode,...props}) => {
           {props.node.initial}
         </Button>
       </div>
+    
     );
   }
 

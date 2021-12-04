@@ -1,4 +1,4 @@
-export const MAIN_TYPES = {
+export const ICF_TYPES = {
     ADD_ICF_VALUE: "ADD_ICF_VALUE",
     REMOVE_ICF_VALUE: "REMOVE_ICF_VALUE"
 }
