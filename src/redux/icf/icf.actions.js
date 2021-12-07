@@ -5,5 +5,5 @@ export const addIcfCode = (code) => {
 };
 
 export const removeIcfCode = (code) => {
-  return { type: ICF_TYPES.ADD_ICF_VALUE, payload: code };
+  return { type: ICF_TYPES.REMOVE_ICF_VALUE, payload: code };
 };

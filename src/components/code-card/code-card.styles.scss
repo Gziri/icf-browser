@@ -1,0 +1,26 @@
+.code-card {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: row;
+  .code-button {
+    margin: 10px 10px;
+    border-width: 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+
+    padding: 5px;
+
+    button {
+        margin-left: 5px;
+      background: whea;
+      border-radius: 30px;
+      border: 2px;
+    }
+
+    button:hover {
+      background-color: navy;
+      border-radius: 30px;
+      color: white;
+    }
+  }
+}

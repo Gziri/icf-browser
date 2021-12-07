@@ -1,5 +1,4 @@
 export const addCodeToStore = (state, icfCodeToAdd) => {
-  console.log("icf", icfCodeToAdd);
   const existingBundle = state.find(
     (code) => code.initial === icfCodeToAdd.initial
   );
@@ -17,7 +16,6 @@ export const addCodeToStore = (state, icfCodeToAdd) => {
 };
 
 export const removeCodeFromStore = (state, icfCodeToRemove) => {
-  
   const newState = state.filter(
     (code) => code.initial !== icfCodeToRemove.initial
   )

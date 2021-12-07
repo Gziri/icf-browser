@@ -1,4 +1,4 @@
-var arr = [
+const arr = [
   {
     title: "BODY FUNCTIONS",
     initial: "b",
@@ -14121,20 +14121,23 @@ var arr = [
     isLeaf: false,
   },
 ];
+var newObjectArray = [];
 
 const fun = (a) => {
   a.forEach((element) => {
     if (element.children != "") {
       fun(element.children);
     }
-    element.title = "(" + element.initial + ")" + " " + element.title;
-    console.log(element.title)
+    newObjectArray.push({
+      title: "(" + element.initial + ")" + " " + element.title,
+      initial: element.initial,
+    });
   });
 };
 fun(arr);
-let json = JSON.stringify(arr);
+let json = JSON.stringify(newObjectArray);
 var fs = require("fs");
-fs.writeFile("./doneFixing.json", json, (err) => {
+fs.writeFile("./flatCodes.json", json, (err) => {
   if (!err) {
     console.log(err);
   }
